@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drivers | Transport Management</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/drivers.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">🚛 Transport Management</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="drivers.html" class="active">Drivers</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="fare.html">Fare</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="tracking.html">Tracking</a></li>
+        </ul>
+    </nav>
+
+    <!-- Driver Management Section -->
+    <section class="drivers-section">
+        <h1>Manage Drivers</h1>
+        
+        <!-- Add Driver Form -->
+        <div class="add-driver-form">
+            <h2>Add New Driver</h2>
+            <form id="driver-form">
+                <input type="text" id="driver-name" placeholder="Driver Name" required>
+                <input type="text" id="license-number" placeholder="License Number" required>
+                <input type="text" id="contact-number" placeholder="Contact Number" required>
+                <input type="text" id="assigned-vehicle" placeholder="Assigned Vehicle" required>
+                <button type="submit">Add Driver</button>
+            </form>
+        </div>
+
+        <!-- Driver Table -->
+        <div class="driver-list">
+            <h2>Registered Drivers</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>License Number</th>
+                        <th>Contact</th>
+                        <th>Assigned Vehicle</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="driver-table-body">
+                    <!-- Data will be injected dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

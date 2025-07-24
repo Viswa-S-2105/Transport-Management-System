@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles | Transport Management</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/vehicles.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">🚛 Transport Management</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="vehicles.html" class="active">Vehicles</a></li>
+            <li><a href="drivers.html">Drivers</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="fare.html">Fare</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="tracking.html">Tracking</a></li>
+        </ul>
+    </nav>
+
+    <!-- Vehicle Management Section -->
+    <section class="vehicles-section">
+        <h1>Manage Vehicles</h1>
+        
+        <!-- Add Vehicle Form -->
+        <div class="add-vehicle-form">
+            <h2>Add New Vehicle</h2>
+            <form id="vehicle-form">
+                <input type="text" id="vehicle-name" placeholder="Vehicle Name" required>
+                <input type="text" id="vehicle-type" placeholder="Vehicle Type (Truck, Bus, etc.)" required>
+                <input type="text" id="vehicle-number" placeholder="Vehicle Number" required>
+                <input type="number" id="capacity" placeholder="Capacity (Passengers/Goods)" required>
+                <button type="submit">Add Vehicle</button>
+            </form>
+        </div>
+
+        <!-- Vehicle Table -->
+        <div class="vehicle-list">
+            <h2>Registered Vehicles</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Number</th>
+                        <th>Capacity</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="vehicle-table-body">
+                    <!-- Vehicles will be added dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports | Transport Management</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="assets/js/reports.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">🚛 Transport Management</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="drivers.html">Drivers</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="fare.html">Fare</a></li>
+            <li><a href="reports.html" class="active">Reports</a></li>
+            <li><a href="tracking.html">Tracking</a></li>
+        </ul>
+    </nav>
+
+    <!-- Reports Section -->
+    <section class="reports-section">
+        <h1>Reports & Analytics</h1>
+
+        <!-- Trip Analytics -->
+        <div class="report-card">
+            <h2>Trip Analytics</h2>
+            <canvas id="tripChart"></canvas>
+        </div>
+
+        <!-- Fare Collection Reports -->
+        <div class="report-card">
+            <h2>Fare Collection</h2>
+            <canvas id="fareChart"></canvas>
+        </div>
+
+        <!-- Driver Performance Reports -->
+        <div class="report-card">
+            <h2>Driver Performance</h2>
+            <canvas id="driverChart"></canvas>
+        </div>
+    </section>
+</body>
+</html>

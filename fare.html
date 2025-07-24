@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fare Management | Transport Management</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/fare.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">🚛 Transport Management</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="drivers.html">Drivers</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="fare.html" class="active">Fare</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="tracking.html">Tracking</a></li>
+        </ul>
+    </nav>
+
+    <!-- Fare Management Section -->
+    <section class="fare-section">
+        <h1>Fare Management</h1>
+        
+        <!-- Add Fare Form -->
+        <div class="add-fare-form">
+            <h2>Calculate & Add Fare</h2>
+            <form id="fare-form">
+                <input type="text" id="trip-id" placeholder="Trip ID" required>
+                <input type="number" id="distance" placeholder="Distance (km)" required>
+                <select id="vehicle-type">
+                    <option value="Truck">Truck</option>
+                    <option value="Van">Van</option>
+                    <option value="Bus">Bus</option>
+                </select>
+                <input type="number" id="fare-amount" placeholder="Fare Amount (Auto-Calculated)" readonly>
+                <button type="submit">Add Fare</button>
+            </form>
+        </div>
+
+        <!-- Fare List Table -->
+        <div class="fare-list">
+            <h2>Fare Records</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip ID</th>
+                        <th>Distance (km)</th>
+                        <th>Vehicle Type</th>
+                        <th>Fare Amount</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="fare-table-body">
+                    <!-- Data will be injected dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

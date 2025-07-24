@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking | Transport Management</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Google Maps API with your real API key -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=yourKey&callback=initMap"></script>
+
+    <script defer src="assets/js/tracking.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">🚛 Transport Management</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="drivers.html">Drivers</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="fare.html">Fare</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="tracking.html" class="active">Tracking</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tracking Section -->
+    <section class="tracking-section">
+        <h1>Vehicle Tracking</h1>
+
+        <!-- Search Vehicle -->
+        <div class="search-box">
+            <input type="text" id="vehicle-search" placeholder="Search Vehicle by ID">
+            <button onclick="searchVehicle()">Search</button>
+        </div>
+
+        <!-- Map Container -->
+        <div id="map"></div>
+    </section>
+</body>
+</html>

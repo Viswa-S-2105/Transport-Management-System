@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Transport Management</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/script.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">🚛 Transport Management</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="drivers.html">Drivers</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="fare.html">Fare</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="tracking.html">Tracking</a></li>
+        </ul>
+        <div class="profile">
+            <img src="assets/images/user.png" alt="User">
+            <span>Admin</span>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <section class="dashboard">
+        <h1>Welcome, Admin</h1>
+        <p>Manage transportation operations efficiently.</p>
+        <div class="stats">
+            <div class="stat-box">
+                <h2>🚗 Vehicles</h2>
+                <p id="total-vehicles">Loading...</p>
+            </div>
+            <div class="stat-box">
+                <h2>👨‍✈️ Drivers</h2>
+                <p id="total-drivers">Loading...</p>
+            </div>
+            <div class="stat-box">
+                <h2>🛣️ Trips</h2>
+                <p id="total-trips">Loading...</p>
+            </div>
+            <div class="stat-box">
+                <h2>💰 Earnings</h2>
+                <p id="total-earnings">Loading...</p>
+            </div>
+        </div>
+
+        <!-- Recent Trips Section -->
+        <div class="recent-trips">
+            <h2>Recent Trips</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip ID</th>
+                        <th>Driver</th>
+                        <th>Vehicle</th>
+                        <th>Destination</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="recent-trips-data">
+                    <!-- Data will be injected dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

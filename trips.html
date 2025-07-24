@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips | Transport Management</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/trips.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">🚛 Transport Management</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="drivers.html">Drivers</a></li>
+            <li><a href="trips.html" class="active">Trips</a></li>
+            <li><a href="fare.html">Fare</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="tracking.html">Tracking</a></li>
+        </ul>
+    </nav>
+
+    <!-- Trip Management Section -->
+    <section class="trips-section">
+        <h1>Manage Trips</h1>
+        
+        <!-- Add Trip Form -->
+        <div class="add-trip-form">
+            <h2>Schedule a New Trip</h2>
+            <form id="trip-form">
+                <input type="text" id="trip-id" placeholder="Trip ID" required>
+                <input type="text" id="trip-destination" placeholder="Destination" required>
+                <input type="text" id="assigned-driver" placeholder="Assigned Driver" required>
+                <input type="text" id="assigned-vehicle" placeholder="Assigned Vehicle" required>
+                <select id="trip-status">
+                    <option value="Scheduled">Scheduled</option>
+                    <option value="On-going">On-going</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Cancelled">Cancelled</option>
+                </select>
+                <button type="submit">Add Trip</button>
+            </form>
+        </div>
+
+        <!-- Trip List Table -->
+        <div class="trip-list">
+            <h2>Scheduled Trips</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip ID</th>
+                        <th>Destination</th>
+                        <th>Driver</th>
+                        <th>Vehicle</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="trip-table-body">
+                    <!-- Data will be injected dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
