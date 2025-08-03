@@ -1,5 +1,4 @@
 #  Transportation Management System (TMS)
-🔗 **Live Demo**: [transport-management-system-brown.vercel.app](https://transport-management-system-brown.vercel.app/)  
 
 ##  Abstract
 The **Transportation Management System (TMS)** is a web-based platform designed to optimize transportation operations. It provides a **modern, interactive, and feature-rich** system for managing **drivers, trips, fares, real-time tracking**, and generating detailed reports.
@@ -23,6 +22,11 @@ The **Transportation Management System (TMS)** is a web-based platform designed 
 1. Download the project and extract the ZIP file.  
 2. Open the `index.html` file in a browser.  
 3. For live tracking, ensure you have an active **Google Maps API Key**.  
+
+🔗 **Live Demo**: [transport-management-system-brown.vercel.app](https://transport-management-system-brown.vercel.app/)  
+
+## 📸 Preview
+![App Screenshot](screenshot.png)
 
 ##  Conclusion
 This project improves transportation efficiency by automating key operations and providing real-time tracking. It is suitable for **logistics companies, cab services, and fleet management businesses.**  
