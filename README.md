@@ -25,7 +25,7 @@ The **Transportation Management System (TMS)** is a web-based platform designed 
 
 🔗 **Live Demo**: [transport-management-system-brown.vercel.app](https://transport-management-system-brown.vercel.app/)  
 
-## 📸 Preview
+##  Preview
 ![App Screenshot](TMS-screenshot.png)
 
 ##  Conclusion
